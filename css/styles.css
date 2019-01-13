@@ -8,6 +8,12 @@ GLOBAL STYLES
 =========================================
 -----------------------------------------*/
 
+:root {
+	--main-blue:#4885ed;
+	--main-light-blue: #56ccf2;
+	--main-green: #34d293; 
+}	
+
 html {
     
     font-size: 100%;        
@@ -214,6 +220,9 @@ h6 {
 .red-text {
 	color: #e96656;
 }
+.light-blue-text {
+	color: var(--main-light-blue);
+}
 .green-text {
 	color: #34d293;
 }
@@ -292,6 +301,18 @@ h6 {
 	bottom: -9px;
 	left: 12.5%;
 }
+
+.light-blue-border-bottom:before {
+	position: absolute;
+	margin: auto;
+	z-index: 1;
+	content: "";
+	width: 75%;
+	height: 2px;
+	background: var(--main-light-blue);
+	bottom: -9px;
+	left: 12.5%;
+}
 .yellow-border-bottom:before {
 	position: absolute;
 	margin: auto;
@@ -303,6 +324,7 @@ h6 {
 	bottom: -9px;
 	left: 12.5%;
 }
+
 .block-border-bottom:before {
 	position: absolute;
 	margin: auto;
@@ -460,7 +482,7 @@ input:focus {
 	padding-top: 23px;
 }
 .current a {
-	color: #e96656 !important;
+	color: var(--main-blue) !important;
 	position: relative;
 	outline: none;
 }
@@ -471,7 +493,7 @@ input:focus {
 	content: "";
 	width: 75%;
 	height: 2px;
-	background: #e96656;
+	background: var(--main-blue);
 	bottom: 0px;
 	left: 12.5%;
 }
@@ -1520,4 +1542,47 @@ footer {
 	font-size: 50px;
 }
 
+/*
+2019 Rebranding changes
+*/
 
+.border-light-blue {
+	border-left: 1em solid var(--main-light-blue);
+}
+
+.border-blue {
+	border-left: 1em solid var(--main-blue);
+
+}
+
+.border-green {
+	border-left: 1em solid var(--main-green);
+
+}
+
+
+.focus-item h2, h4, h3, p{
+	text-align: left;
+	padding-left: 1rem;
+	color: #ffff
+}
+
+.top-buffer-focus-item { margin-top: 50px }
+
+.slashSpace {
+	letter-spacing: -5px;
+}
+
+footer a {
+	color: var(--main-light-blue)
+}
+footer i {
+	color: var(--main-green)
+}
+
+footer h4 {
+	
+}
+.teamInfo p {
+	color: #808080
+}
