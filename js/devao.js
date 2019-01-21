@@ -23,6 +23,17 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
   document.querySelector('head').appendChild(msViewportStyle)
 }
 
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover(); 
+
+    $('.pop').popover().click(function () {
+        setTimeout(function () {
+            $('.pop').popover('hide');
+        }, 7000);
+    });
+
+  });
+
 /* =================================
 ===  STICKY NAV                 ====
 =================================== */
@@ -93,7 +104,8 @@ $(document).ready(function () {
    $(document).ready(function() {
   var owl = $("#client-feedbacks");
   owl.owlCarousel({
-      items : 3, //10 items above 1000px browser width
+      items : 1, //10 items above 1000px browser width
+      autoPlay: 5000,
       itemsDesktop : [1000,2], //5 items between 1000px and 901px
       itemsDesktopSmall : [900,1], // betweem 900px and 601px
       itemsTablet: [600,1], //2 items between 600 and 0

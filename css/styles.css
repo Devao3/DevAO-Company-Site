@@ -1,6 +1,4 @@
-/* =======================================================================
-Zerif -One Page Respossive HTML5 Template
-======================================================================= */
+
 
 /* --------------------------------------
 =========================================
@@ -165,7 +163,7 @@ h6 {
 	background: #56ccf2;
 }
 .blue-btn {
-	background: #4885ed;
+	background: var(--main-blue);
 }
 .yellow-btn {
 	background: #E7AC44;
@@ -177,7 +175,7 @@ h6 {
 }
 .blue-btn:hover {
 	color: #FFF;
-	background: #1288b9;
+	background: var(--main-light-blue);
 }
 .red-btn:hover {
 	color: #FFF;
@@ -498,7 +496,7 @@ input:focus {
 	left: 12.5%;
 }
 .navbar-inverse .navbar-nav>li>a:hover {
-	color: #e96656;
+	color: var(--main-blue);
 	outline: none;
 }
 .navbar-toggle {
@@ -1355,15 +1353,15 @@ width: -webkit-calc(100% / 2);
  **   SECTION:  TESTIMONIAL            -----
 -----------------------------------------*/
 .testimonial {
-	background: #dbbf56;
+	background: var(--main-green);
 	padding-bottom: 90px;
 }
 #client-feedbacks .feedback-box {
-	background: #FFFFFF;
 	padding: 25px;
 	margin: 13px;
 	text-align: left;
 	border-radius: 4px;
+	/* border: solid .25rem var(--main-blue); */
 	-webkit-box-shadow: none;
 	        box-shadow: none;
 	display: block;
@@ -1408,7 +1406,7 @@ width: -webkit-calc(100% / 2);
 	text-align: center;
 }
 .owl-theme .owl-controls .owl-page span {
-	background: #886e0e;
+	background: var(--main-green);
 	border-radius: 50%;
 }
 .customNavigation a {
@@ -1417,6 +1415,10 @@ width: -webkit-calc(100% / 2);
 	-ms-user-select: none;
 	        user-select: none;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.feedback-box img {
+	max-height: 250px;
 }
 
 /*----------------------------------------
@@ -1455,7 +1457,7 @@ width: -webkit-calc(100% / 2);
 	margin-bottom: 20px;
 }
 .contact-us .custom-button {
-	float: right;
+	/* float: right; */
 }
 
 .success,
@@ -1573,6 +1575,11 @@ footer {
 	letter-spacing: -5px;
 }
 
+.slashSpaceNav {
+	letter-spacing: -1px;
+	font-weight: 600;
+}
+
 footer a {
 	color: var(--main-light-blue)
 }
@@ -1585,4 +1592,11 @@ footer h4 {
 }
 .teamInfo p {
 	color: #808080
+}
+
+.popover-title { color: var(--main-green) } 
+.popover-content {color: var(--main-blue)} /* default title color for all popovers */
+.product-padding {
+	padding: 1rem;
+	text-align: center;
 }
