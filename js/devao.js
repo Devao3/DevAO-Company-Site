@@ -4,7 +4,7 @@
 $.vegas('slideshow', {
   delay:7000,
   backgrounds:[
-    { src:'images/backgrounds/comp.jpeg', fade:1000 }
+    { src:'images/backgrounds/comp.jpg', fade:1000 }
   ]
 });
       
@@ -105,7 +105,7 @@ $(document).ready(function () {
   var owl = $("#client-feedbacks");
   owl.owlCarousel({
       items : 1, //10 items above 1000px browser width
-      autoPlay: 5000,
+      autoPlay: 15000,
       itemsDesktop : [1000,2], //5 items between 1000px and 901px
       itemsDesktopSmall : [900,1], // betweem 900px and 601px
       itemsTablet: [600,1], //2 items between 600 and 0

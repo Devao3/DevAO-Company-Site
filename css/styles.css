@@ -1572,7 +1572,7 @@ footer {
 .top-buffer-focus-item { margin-top: 50px }
 
 .slashSpace {
-	letter-spacing: -5px;
+	letter-spacing: -.30rem;
 }
 
 .slashSpaceNav {
@@ -1599,4 +1599,14 @@ footer h4 {
 .product-padding {
 	padding: 1rem;
 	text-align: center;
+}
+
+.devao-about img {
+	margin: auto;    
+    display: block;
+}
+.code-blog {    background: #272727;
+    color: #FFF;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
 }
