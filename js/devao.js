@@ -4,22 +4,11 @@
 $.vegas('slideshow', {
   delay:7000,
   backgrounds:[
-    { src:'images/backgrounds/bg3.jpg', fade:1000 }
+    { src:'images/backgrounds/comp.jpg', fade:1000 }
   ]
 });
       
    
-/* =================================
-   LOADER                     
-=================================== */
-// makes sure the whole site is loaded
-jQuery(window).load(function() {
-        // will first fade out the loading animation
-	jQuery(".status").fadeOut();
-        // will fade out the whole DIV that covers the website.
-	jQuery(".preloader").delay(1000).fadeOut("slow");
-})
-
 
 /* =================================
 ===  Bootstrap Fix              ====
@@ -33,6 +22,17 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
   )
   document.querySelector('head').appendChild(msViewportStyle)
 }
+
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover(); 
+
+    $('.pop').popover().click(function () {
+        setTimeout(function () {
+            $('.pop').popover('hide');
+        }, 7000);
+    });
+
+  });
 
 /* =================================
 ===  STICKY NAV                 ====
@@ -89,7 +89,7 @@ $(document).ready(function(){
 $(document).ready(function () {
        $(function(){
             $("#tagline").typed({ 
-                strings: ["At DevAO we build...^1400", "apps", "the web", "user expereince", "We work with...^1400", "the cloud", "big data", "AI", "Check us out below..."  ],
+                strings: ["apps", "solutions", "staff", "resarch"  ],
                 typeSpeed: 75,
                 contentType: 'text',
             });
@@ -104,7 +104,8 @@ $(document).ready(function () {
    $(document).ready(function() {
   var owl = $("#client-feedbacks");
   owl.owlCarousel({
-      items : 3, //10 items above 1000px browser width
+      items : 1, //10 items above 1000px browser width
+      autoPlay: 15000,
       itemsDesktop : [1000,2], //5 items between 1000px and 901px
       itemsDesktopSmall : [900,1], // betweem 900px and 601px
       itemsTablet: [600,1], //2 items between 600 and 0
@@ -297,6 +298,12 @@ $(".skill2").knob({
                 'bgColor':' #222222 ',
                 'fgColor':' #E7AC44 '
                 });
+});
+
+$(document).ready(function(){
+    var date = new Date();
+    var year = date.getFullYear();
+    $("#copyrightYear").text(year.toString());
 });
 
 
