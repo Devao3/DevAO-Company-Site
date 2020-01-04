@@ -280,7 +280,6 @@ h6 {
 .green-border-bottom:before {
 	position: absolute;
 	margin: auto;
-	z-index: 1;
 	content: "";
 	width: 75%;
 	height: 2px;
@@ -291,7 +290,6 @@ h6 {
 .blue-border-bottom:before {
 	position: absolute;
 	margin: auto;
-	z-index: 1;
 	content: "";
 	width: 75%;
 	height: 2px;
@@ -303,9 +301,8 @@ h6 {
 .light-blue-border-bottom:before {
 	position: absolute;
 	margin: auto;
-	z-index: 1;
 	content: "";
-	width: 75%;
+	width: 100%;
 	height: 2px;
 	background: var(--main-light-blue);
 	bottom: -9px;
@@ -398,19 +395,6 @@ input:focus {
 	font-size: 16px;
 }
 
-/* PRE LOADER */
-.preloader {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: #fefefe;
-	z-index: 99999;
-	height: 100%;
-	width: 100%;
-	overflow: hidden !important;
-}
 .status {
 	width: 200px;
 	height: 200px;
@@ -792,20 +776,6 @@ width: -webkit-calc(100% / 2);
 	position: relative;
 	display: none;
 }
-#loader .loader-icon {
-	background: url(../images/loading.gif) no-repeat center center;
-	background-color: #FFF;
-	margin: -22px -22px;
-	top: 50%;
-	left: 50%;
-	z-index: 10000;
-	position: fixed;
-	width: 44px;
-	height: 44px;
-	-webkit-background-size: 30px 30px;
-	        background-size: 30px 30px;
-	border-radius: 5px;
-}
 
 /*---------------------------------------
  **   SECTION:  ABOUT US              -----
@@ -968,7 +938,7 @@ width: -webkit-calc(100% / 2);
 	top: -200px;
 	left: 0;
 	width: 100%;
-	height: 190px;
+	/*height: 190px;*/
 	-webkit-transition: all 1500ms;
 	        transition: all 1500ms;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1059,6 +1029,38 @@ width: -webkit-calc(100% / 2);
  **   SECTION:  Pacages               -----
 -----------------------------------------*/
 
+.cloud {
+	padding-top: 20px;
+	color: var(--main-light-blue);
+	text-align: left;
+	padding-bottom: 51px;
+	background: #272727;
+}
+.cloud h2 {
+	font-size: 30px !important;
+}
+.data {
+	padding-top: 20px;
+	color: var(--main-blue);
+	text-align: left;
+	padding-bottom: 51px;
+	background: #272727;
+
+}
+.data h2 {
+	font-size: 30px !important;
+}
+.app {
+	padding-top: 20px;
+	color: var(--main-green);
+	text-align: left;
+	padding-bottom: 51px;
+	background: #272727;
+
+}
+.app h2 {
+	font-size: 30px !important;
+}
 .packages {
 	padding-bottom: 50px;
 	background: rgba(0, 0, 0, 0.5);
@@ -1499,6 +1501,18 @@ footer {
 	color: #e96656;
 }
 
+#oldLogo {
+	padding-right: 100px !important; 
+	text-align:left !important;
+	height: 50px;
+}
+
+@media (max-width: 480px) {
+	#oldLogo {
+		padding-right: 200px !important; 
+	}
+}
+
 /* ========================================= */
 /* -----------------------------------------*/
 /*   SINGLE PROJECT PAGE                     */
@@ -1609,4 +1623,37 @@ footer h4 {
     color: #FFF;
 	padding-bottom: 1rem;
 	padding-top: 1rem;
+}
+
+@media (max-width: 480px) {
+	#slashes {
+		font-size: 10.5vw !important;
+	}
+}
+
+#mediumLogo  {
+	padding-bottom: 12px;
+}
+
+#software {
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+.drop-me {
+	box-shadow: 10px 12px 0.5rem rgba(0,0,0,0.5);
+  }
+
+  @media (max-width: 480px) {
+	#threeCharEmp {
+		padding-right: 10px;
+	}
+	.leadership {
+		padding-bottom: 0px;
+	}
+	.about-focus-item {
+		margin-top: 0px;
+	}
 }
