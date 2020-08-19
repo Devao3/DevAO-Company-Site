@@ -1566,14 +1566,24 @@ footer {
 	border-left: 1em solid var(--main-light-blue);
 }
 
+.border-light-blue-thin {
+	border-left: .5em solid var(--main-light-blue);
+}
+
 .border-blue {
 	border-left: 1em solid var(--main-blue);
+}
 
+.border-blue-thin {
+	border-left: .5em solid var(--main-blue);
+}
+
+.border-green-thin {
+	border-left: .5em solid var(--main-green);
 }
 
 .border-green {
 	border-left: 1em solid var(--main-green);
-
 }
 
 
@@ -1657,3 +1667,14 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 		margin-top: 0px;
 	}
 }
+
+.hire:hover{
+	color: var(--main-blue);
+	background:#fff;
+	cursor: pointer;
+  }
+
+  .job-filled {
+	  opacity: 0.5;
+	}
+ 
