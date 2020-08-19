@@ -1666,6 +1666,9 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 	.about-focus-item {
 		margin-top: 0px;
 	}
+	.space {
+		margin-top: 1em;
+	}
 }
 
 .hire:hover{
